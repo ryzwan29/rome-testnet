@@ -9,7 +9,9 @@ clear
 # Install Nodejs
 echo -e "\033[0;32mInstall Nodejs via nvm-list...\033[0m"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-source ~/.bashrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm list-remote
 
 echo -e "\033[0;32mSelect your Nodejs version : \033[0m" read NODEJS_USER
