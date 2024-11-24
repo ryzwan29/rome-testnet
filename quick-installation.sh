@@ -12,7 +12,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 source ~/.bashrc
 nvm list-remote
 
-echo -e "\033[0;32mSelect your Nodejs version : \033[0m" NODEJS_USER
+echo -e "\033[0;32mSelect your Nodejs version : \033[0m" read NODEJS_USER
 nvm use $NODEJS_USER
 clear
 
