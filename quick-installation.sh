@@ -13,7 +13,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 nvm list-remote
-echo -e "\033[0;32mSelect your Node.js version: \033[0m" read NODEJS_USER
+echo -e "\033[0;32mSelect your Node.js version: \033[0m" 
+read NODEJS_USER
 nvm install $NODEJS_USER
 
 if [ $? -eq 0 ]; then
